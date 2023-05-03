@@ -1,0 +1,13 @@
+---
+platform: linux
+image_resources:
+  - name: nodejs
+    type: docker-image
+    source:
+      repository: node
+      tags: latest
+inputs:
+  - name: hello-hapi
+  - name: dependency-cache
+run:
+  path: hello_hapi/ci/scripts/run_tests.sh
