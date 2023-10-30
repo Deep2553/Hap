@@ -10,7 +10,7 @@ resources:
     type: git
     source: &repo-source
       uri: https://github.com/hamidval/hello_hapi
-      branch: master
+      branch: pipeline
   - name: dependency-cache
     type: npm-cache
     source:
